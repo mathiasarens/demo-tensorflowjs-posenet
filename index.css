@@ -1,11 +1,14 @@
 .wrapper {
-    margin: 40px;
+    max-width: 80%;
+    margin: 40px auto;
 }
 
-#container {
+.container {
+    margin: 0 40px;
+}
+
+#image-container {
     position: relative;
-    max-width: 80%;
-    margin: 0 auto;
 }
 
 #image {

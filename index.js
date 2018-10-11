@@ -1,5 +1,5 @@
 const imageScaleFactor = 0.5;
-const outputStride = 16;
+const outputStride = 8;
 const flipHorizontal = false;
 
 const imageElement = document.getElementById('image');
@@ -15,8 +15,7 @@ function calculatePose() {
         return net.estimateSinglePose(imageElement, imageScaleFactor, flipHorizontal, outputStride)
     }).then(function (pose) {
         console.log(pose);
-        resetPoints();
-        let container = document.getElementById('container');
+        let container = document.getElementById('image-container');
         for (const keypoint of pose.keypoints) {
             if (keypoint.score > 0.75) {
                 let divNode = document.createElement("div");
@@ -37,7 +36,8 @@ function firePostNetCalculation(callback) {
     callback();
 }
 
-function filterLastResizeEvent(e) {
+function filterLastResizeEvent() {
+    resetPoints();
     if (resizeTimeoutId) {
         clearTimeout(resizeTimeoutId);
         resizeTimeoutId = null;
