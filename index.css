@@ -1,0 +1,21 @@
+.wrapper {
+    margin: 40px;
+}
+
+#container {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#image {
+    width: 100%;
+}
+
+.point {
+    position: absolute;
+    border-radius: 50%;
+    height: 3px;
+    width: 3px;
+    background: #f00;
+}
