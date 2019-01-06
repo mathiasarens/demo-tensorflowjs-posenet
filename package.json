@@ -1,0 +1,27 @@
+{
+  "name": "demo-tensorflowjs-posenet",
+  "version": "1.0.0",
+  "description": "Playing with tensorflowjs and postnet model",
+  "main": "index.html",
+  "scripts": {
+    "start": "./node_modules/http-server/bin/http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathiasarens/demo-tensorflowjs-posenet.git"
+  },
+  "keywords": [
+    "tensorflowjs",
+    "posenet"
+  ],
+  "author": "Mathias Arens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mathiasarens/demo-tensorflowjs-posenet/issues"
+  },
+  "homepage": "https://github.com/mathiasarens/demo-tensorflowjs-posenet#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

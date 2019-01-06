@@ -22,3 +22,17 @@
     width: 3px;
     background: #f00;
 }
+
+ul.image-cinema {
+    list-style-type: none;
+}
+
+ul.image-cinema li {
+    display: inline-block;
+}
+
+.thumbnail {
+    width: 50px;
+    max-height: 40px;
+    object-fit: cover;
+}
